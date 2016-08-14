@@ -3,7 +3,9 @@
 RSSフィードを読み込んで内容を出力するスクリプトです。
 
 ## Download
-git clone git@bitbucket.org:hfujima/rssreader.git
+```
+# git clone git@bitbucket.org:hfujima/rssreader.git
+```
 
 ## Setup
 ### 1) virtualenvの設定
@@ -18,21 +20,21 @@ git clone git@bitbucket.org:hfujima/rssreader.git
 ### 2) 必須ライブラリのインストール
 beautifulsoup4とpytzを使用しているのでローカル環境にインストールしてください。
 ```
-pip install -r {rssreader}/requirements.txt
+# pip install -r {rssreader}/requirements.txt
 ```
 
 ## 実行方法
 URLを指定して実行する
 ```
-{rssreader}/read_rss.sh http://news.yahoo.co.jp/pickup/rss.xml
+# {rssreader}/read_rss.sh http://news.yahoo.co.jp/pickup/rss.xml
 ```
 
 ローカルに配置されたRSSファイルを指定して実行する
 ```
-{rssreader}/read_rss.sh --file {rssreader}/yahoo.xml
+# {rssreader}/read_rss.sh --file {rssreader}/yahoo.xml
 ```
 
 タイトルだけを出力する
 ```
-{rssreader}/read_rss.sh --format "title:{title}" http://news.yahoo.co.jp/pickup/rss.xml
+# {rssreader}/read_rss.sh --format "title:{title}" http://news.yahoo.co.jp/pickup/rss.xml
 ```
