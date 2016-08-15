@@ -9,12 +9,20 @@ python2.7で動作します。
 ```
 
 ## Setup
+### 0) pipのインストール
+Pythonのパッケージ管理システムのpipがローカルに入っていない場合はインストールしてください。
+```
+# curl https://bootstrap.pypa.io/get-pip.py > ./get-pip.py
+# sudo python ./get-pip.py
+```
+see: https://pip.pypa.io/en/stable/installing/
+
 ### 1) virtualenvの設定
 必須ではないですがローカル環境のpythonを汚したくない場合はvirtualenvを使用してください。
 ```
 # pip install virtualenv
 # cd {rssreader}
-# virtualenv --clear ./virtuarlenv
+# virtualenv --clear ./virtualenv
 # source ./virtualenv/bin/activate
 ```
 
